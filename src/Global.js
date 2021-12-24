@@ -1,0 +1,1 @@
+export let GlobalId = { count: 0 };

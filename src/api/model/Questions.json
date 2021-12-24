@@ -1,0 +1,279 @@
+{
+    "questions": [
+        {
+            "question": "¿Cuántos minutos tiene una hora?",
+            "answers": [
+                "120",
+                "200",
+                "60",
+                "30"
+            ],
+            "correctIndex": 3,
+            "category": 1
+        },
+        {
+            "question": "¿Cuántas patas tiene una araña?",
+            "answers": [
+                "8",
+                "6",
+                "12",
+                "4"
+            ],
+            "correctIndex": 1,
+            "category": 1
+        },
+        {
+            "question": "¿Qué es un siglo?",
+            "answers": [
+                "Un día sin ti",
+                "Un solo momento",
+                "una unidad o periodo de tiempo",
+                "10 años"
+            ],
+            "correctIndex": 3,
+            "category": 1
+        },
+        {
+            "question": "¿En que ciudad está la torre Eifel?",
+            "answers": [
+                "Francia",
+                "París",
+                "Marcia",
+                "San Juan"
+            ],
+            "correctIndex": 2,
+            "category": 1
+        },
+        {
+            "question": "¿Quién es tu primo?",
+            "answers": [
+                "Mi medio hermano",
+                "el hijo/a del hermano/a de uno de nuestros padres",
+                "Mi mejor amigo",
+                "El sobrino de mi hermana"
+            ],
+            "correctIndex": 2,
+            "category": 1
+        },
+        {
+            "question": "En música, ¿A cuántos tiempos equivale una blanca?",
+            "answers": [
+                "4",
+                "2",
+                "8",
+                "15"
+            ],
+            "correctIndex": 2,            
+            "category": 2
+        },
+        {
+            "question": "¿Qué tipo de instrumento es un piano?",
+            "answers": [
+                "De teclas que producen sonido",
+                "De tripas de gato",
+                "de cuerdas percutidas",
+                "De crin de caballo"
+            ],
+            "correctIndex": 3,
+            "category": 2
+        },
+        {
+            "question": "Tercer planeta del sistema solar",
+            "answers": [
+                "Venus",
+                "Tierra",
+                "Acuario",
+                "Saturno"
+            ],
+            "correctIndex": 2,
+            "category": 2
+        },
+        {
+            "question": "¿Qué es un número primo?",
+            "answers": [
+                "El número de mi tia",
+                "aquellos que únicamente resultan divisibles por uno o por sí mismos",
+                "un número gaseoso",
+                "no es un número"
+            ],
+            "correctIndex": 2,
+            "category": 2
+        },
+        {
+            "question": "¿Quién pintó la Mona Lisa?",
+            "answers": [
+                "Mafalda",
+                "Picaso",
+                "Leonardo da Vinci",
+                "Andrea"
+            ],
+            "correctIndex": 3,
+            "category": 2
+        },
+        {
+            "question": "¿Cómo se llama la ciencia que estudia los astros?",
+            "answers": [
+                "Astrología",
+                "Cienciología",
+                "Mecanografía",
+                "Acnología"
+            ],
+            "correctIndex": 1,
+            "category": 3
+        },
+        {
+            "question": "¿Cuál es el río más caudaloso del mundo?",
+            "answers": [
+                "El everest",
+                "El nilo",
+                "El Amazonas",
+                "El ganges"
+            ],
+            "correctIndex": 3,
+            "category": 3
+        },
+        {
+            "question": " ¿Cada cuántos años tenemos un año bisiesto?",
+            "answers": [
+                "4",
+                "100",
+                "50",
+                "2"
+            ],
+            "correctIndex": 1,
+            "category": 3
+        },
+        {
+            "question": "¿Cuántos meses tienen 28 días?",
+            "answers": [
+                "12",
+                "2",
+                "1",
+                "5"
+            ],
+            "correctIndex": 1,
+            "category": 3
+        },
+        {
+            "question": "¿Quién fue Cleopatra?",
+            "answers": [
+                "Una faraona de Egipto",
+                "Una niña linda",
+                "Una Yegua",
+                "Una Madre"
+            ],
+            "correctIndex": 1,
+            "category": 3
+        },
+        {
+            "question": "¿Qué planeta es el más cercano al Sol?",
+            "answers": [
+                "Mercurio",
+                "Venus",
+                "Tierra",
+                "Marte"
+            ],
+            "correctIndex": 1,
+            "category": 4
+        },
+        {
+            "question": "¿Para qué sirven las arterias y las venas?",
+            "answers": [
+                "Para comer",
+                "Para estornudar",
+                "Para correr",
+                "llevar la sangre oxigenada desde el corazón al resto del cuerpo"
+            ],
+            "correctIndex": 4,
+            "category": 4
+        },
+        {
+            "question": "¿Qué habla alguien de Brasil?",
+            "answers": [
+                "Español",
+                "Inglés",
+                "portugués",
+                "Europeo"
+            ],
+            "correctIndex": 3,
+            "category": 4
+        },
+        {
+            "question": "¿Qué tipo de palabra es `aquí`?",
+            "answers": [
+                "adverbio de lugar",
+                "adverbio de tiempo",
+                "Una arruga",
+                "Un antónimo"
+            ],
+            "correctIndex": 1,
+            "category": 4
+        },
+        {
+            "question": "¿Cuáles son los cinco continentes?",
+            "answers": [
+                "Américo, vespusio, Asencio, Muñoz",
+                "Francia, Europa, Venus, Eructo",
+                "Europa, África, Asia, América y Oceanía",
+                "Europa, Asia, Valledupar, Quidio, Chocó"
+            ],
+            "correctIndex": 3,
+            "category": 4
+        },
+        {
+            "question": "¿Cuáles son los planetas del sistema solar?",
+            "answers": [
+                "Mercurio, Venus, la Tierra, Marte, Júpiter, Saturno, Urano y Neptuno",
+                "Mercurio, Oseanía, la Tierra, Marte, Júpiter, Saturno, Urano y Neptuno",
+                "Mercurio, Venus, la Tierra, Marte, Arcadia, Saturno, Urano y Neptuno",
+                "Mercurio, Venus, la Tierra, Terrallende, Júpiter, Saturno, Urano y Neptuno"
+            ],
+            "correctIndex": 1,
+            "category": 5
+        },
+        {
+            "question": "¿Qué quiere decir que una palabra sea esdrújula?",
+            "answers": [
+                "que fué bruja",
+                "que no es brújula",
+                "una palabra muy mala",
+                "su sílaba tónica es la antepenúltima de la palabra"
+            ],
+            "correctIndex": 4,
+            "category": 5
+        },
+        {
+            "question": "¿Cuáles son los tres modos verbales?",
+            "answers": [
+                "Griegos, Romanos, Judios",
+                "indicativo, subjuntivo, imperativo",
+                "Apreciativo, Monógamo, Esdrújulo",
+                "Natural, Real, Disyuntivo"
+            ],
+            "correctIndex": 2,
+            "category": 5
+        },
+        {
+            "question": "¿Cuántos kilos son una tonelada?",
+            "answers": [
+                "mil kilos",
+                "dos mil kilos",
+                "medio kilo",
+                "un kilo"
+            ],
+            "correctIndex": 1,
+            "category": 5
+        },
+        {
+            "question": "¿Cuál es la capital de Italia?",
+            "answers": [
+                "Venechia",
+                "Francia",
+                "Roma",
+                "Europa"
+            ],
+            "correctIndex": 3,
+            "category": 5
+        }
+    ]
+}
