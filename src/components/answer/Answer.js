@@ -26,9 +26,9 @@ const Answer = (props) => {
             <div>
                 {
                     props.correctAnswer ? 
-                    'Correct answer!' : 
+                    'Respuesta correcta!' : 
                     props.clickedAnswer ? 
-                    'Incorrect answer!' : ''
+                    'Respuesta incorrecta!' : ''
                 }
             </div>
         </>

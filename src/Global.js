@@ -1,1 +1,2 @@
-export let GlobalId = { count: 0 };
+export let GlobalId = 0;
+export let isLoggedIn = false;

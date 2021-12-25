@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import "../login/Login.css";
+//import { isLoggedIn, GlobalId } from '../Global';
+
 
 export default function Login() {
     const [email, setEmail] = useState("");
@@ -35,7 +37,7 @@ export default function Login() {
                         onChange={(e) => setPassword(e.target.value)}
                     />
                 </Form.Group>
-                <Button onClick={event =>  window.location.href='/'}  block size="lg" type="submit" disabled={!validateForm()}>
+                <Button onClick= {event =>  window.location.href='/loggedQuiz/'} block size="lg" type="submit" disabled={!validateForm()}>
                     Login
                 </Button>
             </Form>

@@ -1,185 +1,149 @@
 import React, { Component } from 'react';
 import Question from './question/Question';
 import Answer from './answer/Answer'
-import './QuizIndex.css';
-import { isLoggedIn, GlobalId } from '../Global';
+import './loggedQuiz.css';
 
-export default class Quiz extends Component {
+export default class LoggedQuiz extends Component {
 
     state = {
         questions: {     
-            1: '¿Cuántos minutos tiene una hora?',
-            2: '¿Cuántas patas tiene una araña?',
-            3: '¿Qué es un siglo?',
-            4: '¿En que ciudad está la torre Eifel?',
-            5: '¿Quién es tu primo?',
-            6: 'En música, ¿A cuántos tiempos equivale una blanca?',
-            7: '¿Qué tipo de instrumento es un piano?',
-            8: 'Tercer planeta del sistema solar',
-            9: '¿Qué es un número primo?',
-            10: '¿Quién pintó la Mona Lisa?',
-            11: '¿Cómo se llama la ciencia que estudia los astros?',
-            12: '¿Cuál es el río más caudaloso del mundo?',
-            13: '¿Cada cuántos años tenemos un año bisiesto?',
-            14: '¿Cuántos meses tienen 28 días?',
-            15: '¿Quién fue Cleopatra?',
-            16: '¿Qué planeta es el más cercano al Sol?',
-            17: '¿Para qué sirven las arterias y las venas?',
-            18: '¿Qué habla alguien de Brasil?',
-            19: '¿Qué tipo de palabra es `aquí`?',
-            20: '¿Cuáles son los cinco continentes?',
-            21: '¿Cuáles son los planetas del sistema solar?',
-            22: '¿Qué quiere decir que una palabra sea esdrújula?',
-            23: '¿Cuáles son los tres modos verbales?',
-            24: '¿Cuántos kilos son una tonelada?',
-            25: '¿Cuál es la capital de Italia?'
+            1: 'En música, ¿A cuántos tiempos equivale una blanca?',
+            2: '¿Qué tipo de instrumento es un piano?',
+            3: 'Tercer planeta del sistema solar',
+            4: '¿Qué es un número primo?',
+            5: '¿Quién pintó la Mona Lisa?',
+            6: '¿Cómo se llama la ciencia que estudia los astros?',
+            7: '¿Cuál es el río más caudaloso del mundo?',
+            8: '¿Cada cuántos años tenemos un año bisiesto?',
+            9: '¿Cuántos meses tienen 28 días?',
+            10: '¿Quién fue Cleopatra?',
+            11: '¿Qué planeta es el más cercano al Sol?',
+            12: '¿Para qué sirven las arterias y las venas?',
+            13: '¿Qué habla alguien de Brasil?',
+            14: '¿Qué tipo de palabra es `aquí`?',
+            15: '¿Cuáles son los cinco continentes?',
+            16: '¿Cuáles son los planetas del sistema solar?',
+            17: '¿Qué quiere decir que una palabra sea esdrújula?',
+            18: '¿Cuáles son los tres modos verbales?',
+            19: '¿Cuántos kilos son una tonelada?',
+            20: '¿Cuál es la capital de Italia?'
         },
         answers: {
             1: {
-                1: '120',
-                2: '200',
-                3: '60',
-                4: '30'
-            }, 
-            2: {
-                1: '8',
-                2: '6',
-                3: '12', 
-                4: '4'
-            },
-            3: {
-                1: 'Un día sin ti',
-                2: 'Un solo momento',
-                3: 'una unidad o periodo de tiempo', 
-                4: '10 años'
-            },
-            4: {
-                1: 'Francia',
-                2: 'París',
-                3: 'Marcia', 
-                4: 'San Juan'
-            },
-            5: {
-                1: 'Mi medio hermano',
-                2: 'el hijo/a del hermano/a de uno de nuestros padres',
-                3: 'Mi mejor amigo', 
-                4: 'El sobrino de mi hermana'
-            },
-            6: {
                 1: '4',
                 2: '2',
                 3: '8', 
                 4: '15'
             },
-            7: {
+            2: {
                 1: 'De teclas que producen sonido',
                 2: 'De tripas de gato',
                 3: 'de cuerdas percutidas', 
                 4: 'De crin de caballo'
             },
-            8: {
+            3: {
                 1: 'Venus',
                 2: 'Tierra',
                 3: 'Acuario', 
                 4: 'Saturno'
             },
-            9: {
+            4: {
                 1: 'El número de mi tia',
                 2: 'aquellos que únicamente resultan divisibles por uno o por sí mismos',
                 3: 'un número gaseoso"', 
                 4: 'no es un número'
             },
-            10: {
+            5: {
                 1: 'Mafalda',
                 2: 'Picaso',
                 3: 'Leonardo da Vinci', 
                 4: 'Andrea'
             },
-            11: {
+            6: {
                 1: 'Astrología',
                 2: 'Cienciología',
                 3: 'Mecanografía', 
                 4: 'Acnología'
             },
-            12: {
+            7: {
                 1: 'El everest',
                 2: 'El nilo',
                 3: 'El Amazonas', 
                 4: 'El ganges'
             },
-            13: {
+            8: {
                 1: '4',
                 2: '100',
                 3: '50', 
                 4: '2'
             },
-            14: {
+            9: {
                 1: '12',
                 2: '2',
                 3: '1', 
                 4: '5'
             },
-            15: {
+            10: {
                 1: 'Una faraona de Egipto',
                 2: 'Una niña linda',
                 3: 'Una Yegua', 
                 4: 'Una Madre'
             },
-            16: {
+            11: {
                 1: 'Mercurio',
                 2: 'Venus',
                 3: 'Tierra', 
                 4: 'Marte'
             },
-            17: {
+            12: {
                 1: 'Para comer',
                 2: 'Para estornudar',
                 3: 'Para correr', 
                 4: 'llevar la sangre oxigenada desde el corazón al resto del cuerpo'
             },
-            18: {
+            13: {
                 1: 'Español',
                 2: 'Inglés',
                 3: 'portugués', 
                 4: 'Europeo'
             },
-            19: {
+            14: {
                 1: 'adverbio de lugar',
                 2: 'adverbio de tiempo',
                 3: 'Una arruga', 
                 4: 'Un antónimo'
             },
-            20: {
+            15: {
                 1: 'Américo, vespusio, Asencio, Muñoz',
                 2: 'Francia, Europa, Venus, Eructo',
                 3: 'Europa, África, Asia, América y Oceanía', 
                 4: 'Europa, Asia, Valledupar, Quidio, Chocó'
             },
-            21: {
+            16: {
                 1: 'Mercurio, Venus, la Tierra, Marte, Júpiter, Saturno, Urano y Neptuno',
                 2: 'Mercurio, Oseanía, la Tierra, Marte, Júpiter, Saturno, Urano y Neptuno',
                 3: 'Mercurio, Venus, la Tierra, Marte, Arcadia, Saturno, Urano y Neptuno', 
                 4: 'Mercurio, Venus, la Tierra, Terrallende, Júpiter, Saturno, Urano y Neptuno'
             },
-            22: {
+            17: {
                 1: 'que fué bruja',
                 2: 'que no es brújula',
                 3: 'una palabra muy mala', 
                 4: 'su sílaba tónica es la antepenúltima de la palabra'
             },
-            23: {
+            18: {
                 1: 'Griegos, Romanos, Judios',
                 2: 'indicativo, subjuntivo, imperativo',
                 3: 'Apreciativo, Monógamo, Esdrújulo', 
                 4: 'Natural, Real, Disyuntivo'
             },
-            24: {
+            19: {
                 1: 'mil kilos',
                 2: 'dos mil kilos',
                 3: 'medio kilo', 
                 4: 'un kilo'
             },
-            25: {
+            20: {
                 1: 'Venechia',
                 2: 'Francia',
                 3: 'Roma', 
@@ -187,31 +151,26 @@ export default class Quiz extends Component {
             },
         }, 
         correctAnswers: {
-            1: '3',
-            2: '1',
-            3: '3',
+            1: '2',
+            2: '3',
+            3: '2',
             4: '2',
-            5: '2',
-            6: '2',
-            7: '3',
-            8: '2',
-            9: '2',
-            10: '3',
+            5: '3',
+            6: '1',
+            7: '1',
+            8: '1',
+            9: '1',
+            10: '1',
             11: '1',
-            12: '1',
-            13: '1',
-            14: '1',
-            15: '1',
+            12: '4',
+            13: '3',
+            14: '4',
+            15: '3',
             16: '1',
             17: '4',
-            18: '3',
-            19: '4',
-            20: '3',
-            21: '1',
-            22: '4',
-            23: '2',
-            24: '1',
-            25: '3', 
+            18: '2',
+            19: '1',
+            20: '3', 
         },
         category: {
             0: 'Fácil',
@@ -254,7 +213,7 @@ export default class Quiz extends Component {
         let { questions, answers, correctAnswer, clickedAnswer, step, score, isLoggedIn, GlobalId } = this.state;
         return(
             <div className="Content">
-                {step <= 5 ? 
+                {step <= 20 ? 
                     (<>
                         <Question
                             question={questions[step]}
@@ -269,21 +228,15 @@ export default class Quiz extends Component {
                         <button
                         className="NextStep"
                         disabled={
-                            clickedAnswer && 5 >= step
+                            clickedAnswer && 20 >= step
                             ? false : true
                         }
                         onClick={() => this.nextStep(step)}>Siguiente</button>
-                    </>) : ( <div className="newChallenger">
-                                <h1>Has completado el nivel Básico!</h1>
-                                <h1>Para continuar el segundo nivel debes registrarte o loguearte</h1>
-                                <p>Tu calificación es: {score} de 5</p>
-                                <button onClick={event =>  window.location.href='login/'} className="login" >Entrar</button>
-                    </div>
-                        /* <div className="finalPage">
+                    </>) : ( <div className="finalPage">
                             <h1>Has completado el quiz!</h1>
-                            <p>Tu calificación es: {score} of 5</p>
+                            <p>Tu calificación es: {score} of 20</p>
                             <p>Gracias!</p>
-                        </div>*/
+                        </div>
                     )
                 }
             </div>
